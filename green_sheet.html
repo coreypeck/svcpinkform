@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pink Sheet!</title>
+    <title>Green Sheet!</title>
 
     <!-- The routing of these will change once implemented -->
 
@@ -49,6 +49,10 @@
             </div>
         </div>
         <div id="victimInfo">
+            <div class="clientNumber">
+                <label for="clientNumber">Client Number:</label>
+                <input class="clientNumberInput" type="text" ng-model="form.clientNumber" />
+            </div>
             <div class="zipCode">
                 <label for="zipCode">Zip Code:</label>
                 <input class="zipCodeInput" type="text" ng-model="form.zipCode" />
@@ -142,48 +146,48 @@
                     <input type="radio" name="transgender" value="false"> No
                     <input type="radio" name="transgender" value="null"> Unknown/Pass
                     <div>
-                      <label for="pronouns">Preferred Gender Pronouns:</label>
-                      <input class="pronounInput" type="text" ng-model="form.pronouns" />
-                      <label for="age">Sexual Orientation:</label>
-                      <input class="orientationInput" type="text" ng-model="form.orientation" />
+                        <label for="pronouns">Preferred Gender Pronouns:</label>
+                        <input class="pronounInput" type="text" ng-model="form.pronouns" />
+                        <label for="age">Sexual Orientation:</label>
+                        <input class="orientationInput" type="text" ng-model="form.orientation" />
                     </div>
                 </div>
                 <label for="disability">Disability Status</label>
                 <div class="disability">
-                  <table>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Blind/Visually Impaired">Blind/Visually Impaired
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Developmental Disabilities">Developmental Disabilities
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Physical Disabilities">Physical Disabilities
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Mental Illness">Mental Illness
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Deaf/Hearing Impaired">Deaf/Hearing Impaired
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="Unknown/Pass/Client Doesn't Know">Unknown/Pass/Client Doesn't Know
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="None">None
-                        </td>
-                        <td>
-                            <input type="checkbox" name="disability" ng-model="form.disability" value="">Other: <input type="text" ng-model="form.disability" name="otherDisability" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-                        </td>
-                    </tr>
-                  </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Blind/Visually Impaired">Blind/Visually Impaired
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Developmental Disabilities">Developmental Disabilities
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Physical Disabilities">Physical Disabilities
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Mental Illness">Mental Illness
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Deaf/Hearing Impaired">Deaf/Hearing Impaired
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="Unknown/Pass/Client Doesn't Know">Unknown/Pass/Client Doesn't Know
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="None">None
+                            </td>
+                            <td>
+                                <input type="checkbox" name="disability" ng-model="form.disability" value="">Other: <input type="text" ng-model="form.disability" name="otherDisability" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="ethnicDetails">
-                  <label for="ethnicBackground">Ethnic Background:</label>
-                  <select>
+                    <label for="ethnicBackground">Ethnic Background:</label>
+                    <select>
                     <option ng-model="form.ethnicBackground" value="African American">African American</option>
                     <option ng-model="form.ethnicBackground" value="Native American">Native American</option>
                     <option ng-model="form.ethnicBackground" value="Asian/Pacific Islander">Asian/Pacific Islander</option>
@@ -192,8 +196,8 @@
                     <option ng-model="form.ethnicBackground" value="Multi-Racial">Multi-Racial</option>
                     <option ng-model="form.ethnicBackground" value="Other">Other</option>
                   </select>
-                  <label for="immigrantStatus">Immigrant Status:</label>
-                  <select>
+                    <label for="immigrantStatus">Immigrant Status:</label>
+                    <select>
                     <option ng-model="form.immigrantStatus" value="Africa">Africa</option>
                     <option ng-model="form.immigrantStatus" value="Asia">Asia</option>
                     <option ng-model="form.immigrantStatus" value="Europe">Europe</option>
@@ -205,67 +209,72 @@
                 </div>
             </div>
             <div class="clientServices">
-              <label for="serviceStatus">Client Services Provided:</label>
-              <input type="radio" name="serviceStatus" value="First contact ever crisis counseling"> First contact ever crisis counseling
-              <input type="radio" name="serviceStatus" value="Follow-up crisis counseling"> Follow-up crisis counseling
+                <label for="serviceStatus">Client Services Provided:</label>
+                <input type="radio" name="serviceStatus" value="First contact ever crisis counseling"> First contact ever crisis counseling
+                <input type="radio" name="serviceStatus" value="Follow-up crisis counseling"> Follow-up crisis counseling
+            </div>
+            <div class="counseling">
+              <label for="counseling">Counceling:</label>
+              <input type="radio" name="counseling" value="One-to-One Counceling"> One-to-One Counceling
+              <input type="radio" name="counseling" value="Medical Advocacy"> Medical Advocacy
+              <input type="radio" name="counseling" value="Support Group"> Support Group
+            </div>
+            <div class="legalAdvocacy">
+              <label for="legalAdvocacy">Legal Advocacy:</label>
+              <input type="radio" name="legalAdvocacy" value="Criminal Justice Support"> Criminal Justice Support
+              <input type="radio" name="legalAdvocacy" value="Other Legal Advocacy"> Other Legal Advocacy
             </div>
             <div class="otherClientServices">
-              <label for="otherClientServices">Check All that Apply:</label>
-              <div>
-                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Personal Advocacy, assisting with other organizations/professional">Personal Advocacy, assisting with other organizations/professional
-              </div>
-              <div>
-                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Criminal Justice Support">Criminal Justice Support
-              </div>
-              <div>
-                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Other Legal Advocacy Support">Other Legal Advocacy Support
-              </div>
-              <div>
-                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Financial Assistance">Financial Assistance
-              </div>
-              <div>
-                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Assisting in Filing Reperations">Assisting in Filing Reperations Claims
-              </div>
+                <label for="otherClientServices">Check All that Apply:</label>
+                <div>
+                    <input type="checkbox" name="clientService" ng-model="form.clientService" value="Personal Advocacy, assisting with other organizations/professional">Personal Advocacy, assisting with other organizations/professional
+                </div>
+                <div>
+                    <input type="checkbox" name="clientService" ng-model="form.clientService" value="Financial Assistance">Financial Assistance
+                </div>
+                <div>
+                    <input type="checkbox" name="clientService" ng-model="form.clientService" value="Assisting in Filing Reperations">Assisting in Filing Reperations Claims
+                </div>
             </div>
             <div class="referrals">
-              <table>
-                <tr>
-                  <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
-                  </td>
-                  <td>
-                    <label for="govSocialServices">Gov't Social Services:</label>
-                    <input class="govSSInput" type="text" ng-model="form.govSSReferral" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="school">School:</label>
-                    <input class="schoolInput" type="text" ng-model="form.schoolReferral" />
-                  </td>
-                  <td>
-                    <label for="legalSystem">Legal System:</label>
-                    <input class="legalSystemInput" type="text" ng-model="form.legalSystem" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="lawEnforcement">Law Enforcement:</label>
-                    <input class="lawEnforcementInput" type="text" ng-model="form.lawEnforcementReferral" />
-                  </td>
-                  <td>
-                    <label for="svcServices">SVC Services:</label>
-                    <input class="svcServicesInput" type="text" ng-model="form.svcServiceReferral" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="other">Other:</label>
-                    <input class="OtherInput" type="text" ng-model="form.otherReferral" />
-                  </td>
-                </tr>
-              </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="medical">Medical:</label>
+                            <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
+                        </td>
+                        <td>
+                            <label for="govSocialServices">Gov't Social Services:</label>
+                            <input class="govSSInput" type="text" ng-model="form.govSSReferral" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="school">School:</label>
+                            <input class="schoolInput" type="text" ng-model="form.schoolReferral" />
+                        </td>
+                        <td>
+                            <label for="legalSystem">Legal System:</label>
+                            <input class="legalSystemInput" type="text" ng-model="form.legalSystem" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lawEnforcement">Law Enforcement:</label>
+                            <input class="lawEnforcementInput" type="text" ng-model="form.lawEnforcementReferral" />
+                        </td>
+                        <td>
+                            <label for="svcServices">SVC Services:</label>
+                            <input class="svcServicesInput" type="text" ng-model="form.svcServiceReferral" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="other">Other:</label>
+                            <input class="OtherInput" type="text" ng-model="form.otherReferral" />
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </form>
