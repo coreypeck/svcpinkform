@@ -208,11 +208,22 @@
               <input type="radio" name="serviceStatus" value="Follow-up crisis counseling"> Follow-up crisis counseling
             </div>
             <div class="otherClientServices">
-              <input type="checkbox" name="clientService" ng-model="form.clientService" value="Personal Advocacy, assisting with other organizations/professional">Personal Advocacy, assisting with other organizations/professional
-              <input type="checkbox" name="clientService" ng-model="form.clientService" value="Criminal Justice Support">Criminal Justice Support
-              <input type="checkbox" name="clientService" ng-model="form.clientService" value="Other Legal Advocacy Support">Other Legal Advocacy Support
-              <input type="checkbox" name="clientService" ng-model="form.clientService" value="Financial Assistance">Financial Assistance
-              <input type="checkbox" name="clientService" ng-model="form.clientService" value="Assisting in Filing Reperations">Assisting in Filing Reperations
+              <label for="otherClientServices">Check All that Apply:</label>
+              <div>
+                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Personal Advocacy, assisting with other organizations/professional">Personal Advocacy, assisting with other organizations/professional
+              </div>
+              <div>
+                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Criminal Justice Support">Criminal Justice Support
+              </div>
+              <div>
+                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Other Legal Advocacy Support">Other Legal Advocacy Support
+              </div>
+              <div>
+                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Financial Assistance">Financial Assistance
+              </div>
+              <div>
+                <input type="checkbox" name="clientService" ng-model="form.clientService" value="Assisting in Filing Reperations">Assisting in Filing Reperations
+              </div>
             </div>
             <div class="referrals">
               <table>
@@ -223,33 +234,33 @@
                   </td>
                   <td>
                     <label for="govSocialServices">Gov't Social Services:</label>
-                    <input class="govSSInput" type="text" ng-model="form.medicalReferral" />
+                    <input class="govSSInput" type="text" ng-model="form.govSSReferral" />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
+                    <label for="school">School:</label>
+                    <input class="schoolInput" type="text" ng-model="form.schoolReferral" />
                   </td>
                   <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
-                  </td>
-                  <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
+                    <label for="legalSystem">Legal System:</label>
+                    <input class="legalSystemInput" type="text" ng-model="form.legalSystem" />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label for="medical">Medical:</label>
-                    <input class="medicalInput" type="text" ng-model="form.medicalReferral" />
+                    <label for="lawEnforcement">Law Enforcement:</label>
+                    <input class="lawEnforcementInput" type="text" ng-model="form.lawEnforcementReferral" />
+                  </td>
+                  <td>
+                    <label for="svcServices">SVC Services:</label>
+                    <input class="svcServicesInput" type="text" ng-model="form.svcServiceReferral" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="other">Other:</label>
+                    <input class="OtherInput" type="text" ng-model="form.otherReferral" />
                   </td>
                 </tr>
               </table>
